@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "browser": true // Adicionado para suportar ambiente de navegador, se necessário
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "prettier" // Garante que as regras do Prettier tenham prioridade sobre outras regras de estilo
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest", // Suporte para a versão mais recente do ECMAScript
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-native"
+    // Considere adicionar mais plugins conforme necessário
+  ],
+  "rules": {
+    // Adicione suas regras personalizadas aqui. Exemplo:
+     "react/prop-types": 0, // Desativa a exigência de prop-types em componentes React
+     "no-console": "warn" // Emite um aviso para o uso de console.log
+  }
+}
